@@ -1,11 +1,13 @@
 package entities;
 
+import java.util.Scanner;
+
 public class Player {
 
     private String namePlayer;
-    private Integer totalPointsPlayer;
-    private Integer totalwinsPlayer;
-    private Integer totalLosePlayer;
+    private int totalPointsPlayer;
+    private int totalWinsPlayer;
+    private int totalLosePlayer;
 
     public Player(String namePlayer) {
         this.namePlayer = namePlayer;
@@ -22,7 +24,7 @@ public class Player {
 
     // Getter total win and lose
     public Integer getTotalwinsPlayer() {
-        return totalwinsPlayer;
+        return totalWinsPlayer;
     }
 
     public Integer getTotalLosePlayer() {
@@ -45,10 +47,10 @@ public class Player {
     //rounds
 
     public void addOneVictory(){
-        totalwinsPlayer += 1;
+        this.totalWinsPlayer += 1;
     }
 
     public void addOneLose(){
-        totalLosePlayer += 1;
+        this.totalLosePlayer += 1;
     }
 }
